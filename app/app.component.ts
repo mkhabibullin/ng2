@@ -52,7 +52,8 @@ export class Item{
                 </tr>
             </tbody>
         </table>
-    </div>`
+    </div>`,
+	styleUrls: ['app/app.component.scss']
 })
 export class AppComponent { 
     items: Item[] = 

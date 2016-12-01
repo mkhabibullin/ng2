@@ -2,3 +2,4 @@ node_modules/*
 dest/*
 app/*.js
 app/*.js.map
+app/*.css

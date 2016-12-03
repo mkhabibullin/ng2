@@ -3,3 +3,4 @@ dest/*
 app/*.js
 app/*.js.map
 .idea/*
+app/*.css

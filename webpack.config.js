@@ -20,6 +20,11 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: ExtractTextPlugin.extract("style-loader", "css-loader!resolve-url-loader!sass-loader")
             }
+			//{
+			//  test: /\.scss$/,
+			// exclude: /node_modules/,
+			//  loaders: ['raw-loader', 'sass-loader'] // sass-loader not scss-loader
+			//}
         ]
     },
     resolve: {

@@ -1,4 +1,4 @@
-﻿import { Component } from '@angular/core';
+﻿import { Component, ViewEncapsulation } from '@angular/core';
      
 export class Item{
     purchase: string;
@@ -12,7 +12,7 @@ export class Item{
         this.done = false;
     }
 }
- 
+require('./app.component.scss');
 @Component({
     selector: 'my-app',
     template: `<div class="page-header">
@@ -52,7 +52,10 @@ export class Item{
                 </tr>
             </tbody>
         </table>
-    </div>`
+    </div>`//,
+    //styles: [require('./app.component.scss')],
+    //styleUrls: ['./app/app.component.scss'],
+    //encapsulation: ViewEncapsulation.Emulated
 })
 export class AppComponent { 
     items: Item[] = 

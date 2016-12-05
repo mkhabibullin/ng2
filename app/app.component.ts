@@ -44,4 +44,5 @@ export class AppComponent {
     }
 
     name: string = "Tom";
+    age: number = 24;
 }

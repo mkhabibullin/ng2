@@ -1,4 +1,5 @@
-<child-comp><h2>Добро пожаловать {{name}}!</h2></child-comp>
+<child-comp [userName]="name" [userAge]="age"></child-comp>
+<input type="number" [(ngModel)]="age" />
 <p>Привет {{name}}</p>
 <div class="page-header">
         <h1> Список покупок </h1>

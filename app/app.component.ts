@@ -16,7 +16,11 @@ require('./app.component.scss');
 @Component({
     selector: 'my-app',
     templateUrl: `app/app.component.html`,
-    styles: [`h2, p {color:#333;}`]//,
+    styles: [`
+        .nav{ clear: both;}
+        a {float: left;}
+        .active a { color: red;}
+        `]//,
     //styles: [require('./app.component.scss')],
     //styleUrls: ['./app/app.component.scss'],
     //encapsulation: ViewEncapsulation.Emulated

@@ -1,5 +1,12 @@
 <div>
-    <h1>Маршрутизация в Angular 2</h1>
+    <ul class="nav">
+                        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                            <a routerLink="">Главная</a>
+                        </li>
+                        <li routerLinkActive="active">
+                            <a routerLink="/about">О сайте</a>
+                        </li>
+                    </ul>
     <router-outlet></router-outlet>
 </div>
 
@@ -45,16 +52,15 @@
         </table>
     </div>
 
-<!-- Привязка элемента DOM к значению компонента (односторонняя) -->
 <div>
     <p>Количество кликов - {{count}}</p>
     <button (click)="increase()">Click</button>
 </div>
 
-<!-- Двусторонняя привязка -->
 <div>
     <p>Привет {{name}}</p>
     <input type="text" [(ngModel)]="name" />
     <br><br>
     <input type="text" [(ngModel)]="name" />
-</div>-->
+</div>
+-->

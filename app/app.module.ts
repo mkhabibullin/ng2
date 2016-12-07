@@ -10,16 +10,21 @@ import { AboutComponent } from './about.component';
 import { HomeComponent } from './home.component';
 import { NotFoundComponent } from './not-found.component';
 
+// Binding
+import { ChildComponent as bindingImputChComp} from './Binding/input/child.component'; 
+import { ParentComponent as bindingImputPComp} from './Binding/input/parent.component'; 
+
 // Определение маршрутов http://metanit.com/web/angular2/7.1.php
 const appRoutes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'about', component: AboutComponent },
+    { path: 'bindInput', component: bindingImputPComp },
     { path: '**', component: NotFoundComponent }
 ]; 
 
 @NgModule({
     imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes) ],
-    declarations: [ AppComponent, ChildComponent, HomeComponent, AboutComponent, NotFoundComponent ],
+    declarations: [ AppComponent, ChildComponent, HomeComponent, AboutComponent, NotFoundComponent, bindingImputChComp, bindingImputPComp ],
     bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

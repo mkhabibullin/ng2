@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
         <div>
             <binding-input-child-comp [userName]="name" [userAge]="age"></binding-input-child-comp>
             <input type="text" [(ngModel)]="name"/>
+            <input type="number" [(ngModel)]="age" />
         </div>`,
     styles: [`div { background-color: Azure  }`]
 })

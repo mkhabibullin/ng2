@@ -2,10 +2,11 @@ import { Output, Component, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'binding-event-child-comp',
-    template: `
-                <button>+</button>
-                <button>-</button>
-                `
+    template: `<div>
+                <button (click)="change(true)">+</button>
+                <button (click)="change(false)">-</button>
+                </div>`,
+    styles: [`div { background-color: WhiteSmoke }`]
 })
 export class ChildComponent {
 
@@ -14,5 +15,4 @@ export class ChildComponent {
     change(increased) {
         this.onChanged.emit(increased);
     }
-
 }

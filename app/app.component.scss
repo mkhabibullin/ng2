@@ -1,5 +1,16 @@
 $primaryColor: red;
 
+$childCompColor: WhiteSmoke;
+$parentCompColor: Azure;
+
 h1 {
   color: $primaryColor;
+}
+
+.child-comp {
+  background-color: $childCompColor
+}
+
+.parent-comp {
+  background-color: $parentCompColor
 }

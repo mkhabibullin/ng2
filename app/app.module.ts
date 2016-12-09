@@ -15,6 +15,8 @@ import { ChildComponent as bindingImputChComp} from './Binding/input/child.compo
 import { ParentComponent as bindingImputPComp} from './Binding/input/parent.component';
 import { ChildComponent as bindingEventChComp} from './Binding/Event/child.component';
 import { ParentComponent as bindingEventPComp} from './Binding/Event/parent.component';
+import { ChildComponent as bindingTwowayChComp } from './Binding/TwoWay/child.component';
+import { ParentComponent as bindingTwowayPComp } from './Binding/TwoWay/parent.component';
 
 // Определение маршрутов http://metanit.com/web/angular2/7.1.php
 const appRoutes: Routes = [
@@ -22,13 +24,15 @@ const appRoutes: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'bindInput', component: bindingImputPComp },
     { path: 'bindEvent', component: bindingEventPComp },
+    { path: 'bindTwoWay', component: bindingTwowayPComp },
     { path: '**', component: NotFoundComponent }
 ]; 
 
 @NgModule({
     imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes) ],
     declarations: [ AppComponent, ChildComponent, HomeComponent, AboutComponent, NotFoundComponent, 
-                    bindingImputChComp, bindingImputPComp, bindingEventChComp, bindingEventPComp ],
+                    bindingImputChComp, bindingImputPComp, bindingEventChComp, bindingEventPComp,
+                    bindingTwowayPComp, bindingTwowayChComp ],
     bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

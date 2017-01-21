@@ -17,6 +17,8 @@ import { ChildComponent as bindingEventChComp} from './Binding/Event/child.compo
 import { ParentComponent as bindingEventPComp} from './Binding/Event/parent.component';
 import { ChildComponent as bindingTwowayChComp } from './Binding/TwoWay/child.component';
 import { ParentComponent as bindingTwowayPComp } from './Binding/TwoWay/parent.component';
+import { ChildComponent as localVarChComp } from './LocalVar/child.component';
+import { ParentComponent as localVarPComp } from './LocalVar/parent.component';
 
 // Определение маршрутов http://metanit.com/web/angular2/7.1.php
 const appRoutes: Routes = [
@@ -25,6 +27,7 @@ const appRoutes: Routes = [
     { path: 'bindInput', component: bindingImputPComp },
     { path: 'bindEvent', component: bindingEventPComp },
     { path: 'bindTwoWay', component: bindingTwowayPComp },
+    { path: 'localVar', component: localVarPComp },
     { path: '**', component: NotFoundComponent }
 ]; 
 
@@ -32,7 +35,7 @@ const appRoutes: Routes = [
     imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes) ],
     declarations: [ AppComponent, ChildComponent, HomeComponent, AboutComponent, NotFoundComponent, 
                     bindingImputChComp, bindingImputPComp, bindingEventChComp, bindingEventPComp,
-                    bindingTwowayPComp, bindingTwowayChComp ],
+                    bindingTwowayPComp, bindingTwowayChComp, localVarPComp, localVarChComp ],
     bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

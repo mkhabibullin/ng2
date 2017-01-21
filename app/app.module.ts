@@ -19,6 +19,8 @@ import { ChildComponent as bindingTwowayChComp } from './Binding/TwoWay/child.co
 import { ParentComponent as bindingTwowayPComp } from './Binding/TwoWay/parent.component';
 import { ChildComponent as localVarChComp } from './LocalVar/child.component';
 import { ParentComponent as localVarPComp } from './LocalVar/parent.component';
+import { CustomCounterComponent as customCounterChComp } from './Binding/TwoWaySetters/child.component';
+import { ParentCounterComponent as customCounterPComp } from './Binding/TwoWaySetters/parent.component';
 
 // Определение маршрутов http://metanit.com/web/angular2/7.1.php
 const appRoutes: Routes = [
@@ -28,6 +30,7 @@ const appRoutes: Routes = [
     { path: 'bindEvent', component: bindingEventPComp },
     { path: 'bindTwoWay', component: bindingTwowayPComp },
     { path: 'localVar', component: localVarPComp },
+    { path: 'customCounter', component: customCounterPComp },
     { path: '**', component: NotFoundComponent }
 ]; 
 
@@ -35,7 +38,8 @@ const appRoutes: Routes = [
     imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes) ],
     declarations: [ AppComponent, ChildComponent, HomeComponent, AboutComponent, NotFoundComponent, 
                     bindingImputChComp, bindingImputPComp, bindingEventChComp, bindingEventPComp,
-                    bindingTwowayPComp, bindingTwowayChComp, localVarPComp, localVarChComp ],
+                    bindingTwowayPComp, bindingTwowayChComp, localVarPComp, localVarChComp,
+                    customCounterChComp, customCounterPComp ],
     bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
